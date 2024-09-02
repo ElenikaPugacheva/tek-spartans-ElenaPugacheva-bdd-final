@@ -4,6 +4,7 @@ import org.junit.Assert;
 import pages.CreatePrimaryAccountHolderPage;
 import pages.SignInPage;
 import utility.SeleniumUtility;
+
 public class LoginSteps extends SeleniumUtility {
     @Then("user click on Login button")
     public void clickLogin(){

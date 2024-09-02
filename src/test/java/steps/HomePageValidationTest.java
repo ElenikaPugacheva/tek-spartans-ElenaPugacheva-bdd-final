@@ -4,6 +4,7 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import pages.HomePage;
 import utility.SeleniumUtility;
+
 public class HomePageValidationTest extends SeleniumUtility {
     @Given("user navigates to the home page and validate the TEK Insurance App title")
     public void user_navigates_to_the_home_page_and_validate_the_title() {

@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import pages.AccountsPage;
 import utility.SeleniumUtility;
 import java.util.List;
-
 public class Accounts extends SeleniumUtility {
     @Given("user navigates to the Accounts Page and click on it")
     public void clickOnAccountLink(){

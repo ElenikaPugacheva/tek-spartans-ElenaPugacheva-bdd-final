@@ -8,6 +8,7 @@ import pages.ProfilePage;
 import pages.SignInPage;
 import utility.RandomEmail;
 import utility.SeleniumUtility;
+
 public class CreateAccountSteps extends SeleniumUtility {
     private String firstName;
     private String lastName;

@@ -5,13 +5,11 @@ Feature: Plans
     When user click on Login button
     Then user enter username "supervisor" and "tek_supervisor" as password
     Then user navigated to "Customer Service Portal"
-
     @UserStory12
   Scenario: Validate 4 row of data is present
     Given user navigates to the Plans Page and click on it
     Then plans page should be displayed
     And there should be 4 rows of data
-
     @UserStory13
   Scenario: Validate date
       Given user navigates to the Plans Page and click on it

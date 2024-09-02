@@ -6,7 +6,6 @@ import org.junit.Assert;
 import pages.ProfilePage;
 import utility.SeleniumUtility;
 import java.util.Map;
-
 public class UserProfileSteps extends SeleniumUtility{
     @When("user click on Profile button")
     public void clickOnProfileBTN(){

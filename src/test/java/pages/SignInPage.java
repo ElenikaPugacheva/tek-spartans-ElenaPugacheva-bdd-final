@@ -1,6 +1,7 @@
 package pages;
 import org.openqa.selenium.By;
 import utility.SeleniumUtility;
+
 public class SignInPage extends SeleniumUtility {
     public static final By LOGIN_BTN = By.xpath("//a[@href='/login']");
     public static final By USERNAME = By.name("username");
