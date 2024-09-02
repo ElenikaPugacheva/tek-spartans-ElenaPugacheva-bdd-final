@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import utility.RandomEmail;
 import utility.SeleniumUtility;
+
 public class CommonSteps extends SeleniumUtility {
     public static String randomEmail;
     @Given("user click on {string} link")

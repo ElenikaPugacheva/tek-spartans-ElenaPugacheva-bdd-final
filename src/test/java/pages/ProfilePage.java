@@ -1,6 +1,7 @@
 package pages;
 import org.openqa.selenium.By;
 import utility.SeleniumUtility;
+
 public class ProfilePage extends SeleniumUtility {
     public static final By PROFILE_BTN = By.xpath("//button[@aria-label='profile']");
     public static final By PROFILE_SIDE_TITLE = By.xpath("//header[text()='Profile']");

@@ -1,9 +1,7 @@
 package steps;
 import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
 import org.junit.Assert;
 import pages.CreatePrimaryAccountHolderPage;
-import pages.HomePage;
 import pages.SignInPage;
 import utility.SeleniumUtility;
 public class LoginSteps extends SeleniumUtility {

@@ -1,5 +1,4 @@
 package steps;
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,6 +11,7 @@ import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.Locale;
+
 public class Plans extends SeleniumUtility {
     @Given("user navigates to the Plans Page and click on it")
     public void navigateToPlansPage(){

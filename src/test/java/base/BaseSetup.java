@@ -1,5 +1,4 @@
 package base;
-
 import browsers.BaseBrowser;
 import browsers.ChromeBrowser;
 import browsers.EdgeBrowser;
@@ -7,13 +6,11 @@ import browsers.FireFoxBrowser;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 public class BaseSetup {
     private static final Logger LOGGER = LogManager.getLogger(BaseSetup.class);
     private static WebDriver driver;
@@ -32,7 +29,6 @@ public class BaseSetup {
         }
     }
     public void setupBrowser() {
-        //To Open Chrome browser in headless mode
         String browserType = properties.getProperty("ui.browser");
         boolean isHeadless = Boolean.parseBoolean(properties.getProperty("ui.browser.headless"));
         LOGGER.info("Running on browser {} and isHeadless {}", browserType, isHeadless);
@@ -58,8 +54,6 @@ public class BaseSetup {
             driver.quit();
         }
     }
-    //Giving read-only indirect access to driver.
-    //restrict setting new driver instance
     public WebDriver getDriver() {
         return driver;
     }

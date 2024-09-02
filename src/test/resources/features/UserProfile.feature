@@ -5,6 +5,7 @@ Feature: User Profile
     Then user click on Login button
     Then user enter username "supervisor" and "tek_supervisor" as password
     Then user navigated to "Customer Service Portal"
+
     @UserStory10
   Scenario: Validate Profile Info in Profile Side Drawer
     When user click on Profile button
@@ -13,6 +14,7 @@ Feature: User Profile
       | Full Name   | Supervisor |
       | UserName    | supervisor |
       | Authorities | admin      |
+
     @UserStory11
   Scenario: click on profile button and then click on Logout button make sure user navigate to home page
       When user click on Profile button
