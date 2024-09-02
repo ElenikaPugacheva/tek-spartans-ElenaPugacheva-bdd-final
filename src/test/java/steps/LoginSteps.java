@@ -1,17 +1,35 @@
 package steps;
-
 import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import org.junit.Assert;
+import pages.CreatePrimaryAccountHolderPage;
+import pages.HomePage;
 import pages.SignInPage;
 import utility.SeleniumUtility;
-
-public class SignInStep extends SeleniumUtility {
-    //Sign in page steps
-   /* @Then("user enter {string} in the username field")
-    public void enterUsernameOnSignInPage(String value){
-        sendText(SignInPage.USERNAME,value);
+public class LoginSteps extends SeleniumUtility {
+    @Then("user click on Login button")
+    public void clickLogin(){
+        clickOnElement(SignInPage.LOGIN_BTN);
     }
-    @Then("user enter {string} in the password field")
-    public void enterPasswordOnSignInPage(String value){
-        sendText(SignInPage.PASSWORD,value);
-        }*/
+    @Then("user enter username {string} and {string} as password")
+    public void userLoginWithUsernameAndAsPassword(String userName, String password) {
+        sendText(CreatePrimaryAccountHolderPage.USERNAME_INPUT,userName);
+        sendText(CreatePrimaryAccountHolderPage.PASSWORD_INPUT, password);
+        clickOnElement(SignInPage.SIGN_IN_BTN);
+    }
+    @Then("user navigated to {string}")
+            public void validateUserIsNavigatedTo(String expectedResult) {
+        String actualResult = getElementText(SignInPage.CUSTOMER_SERVICE_PORTAL);
+        Assert.assertEquals("Title should matched:" , expectedResult,actualResult);
+    }
+    @Then("user should be navigated to the {string}")
+    public void customerServicePortal(){
+        Assert.assertTrue("The title not found",isElementDisplayed(SignInPage.CUSTOMER_SERVICE_PORTAL));
+    }
+    @Then("user should see an error {string}")
+    public void errorMSG(String expectedResult){
+        String actualResult = getElementText(CreatePrimaryAccountHolderPage.ERROR_MSG);
+        actualResult = actualResult.replace("ERROR", "").trim();
+        Assert.assertEquals("Both message should be the same: ", expectedResult, actualResult);
+    }
 }
