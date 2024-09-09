@@ -1,7 +1,6 @@
 @Login
 Feature: Login
   Background:
-    Given user navigates to the home page and validate the TEK Insurance App title
     Then user click on Login button
   @UserStory7 @Positive
   Scenario: Navigate to login by clicking on Login button and enter valid csr user

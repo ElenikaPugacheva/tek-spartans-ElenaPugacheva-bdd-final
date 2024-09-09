@@ -1,7 +1,6 @@
 @Accounts
 Feature: Accounts
   Background:
-    Given user navigates to the home page and validate the TEK Insurance App title
     Then user click on Login button
     Then user enter username "supervisor" and "tek_supervisor" as password
     Then user navigated to "Customer Service Portal"
