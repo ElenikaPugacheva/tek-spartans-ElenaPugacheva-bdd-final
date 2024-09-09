@@ -21,7 +21,7 @@ Feature: Create account Validation
     Then user click on "Create Account" button
     When user should be navigated on Sign up your account page
     Then user navigate to page email address and full name shows as expected
-    Then user enter "elev7i3" in the Create Account username field
+    Then user enter "elev73i3" in the Create Account username field
     Then user enter "Mona3yo#" in the Create Account password field
     Then user enter "Mona3yo#" in the Create Account confirm password field
     Then user click on "Submit" button
@@ -48,12 +48,12 @@ Feature: Create account Validation
     Then user click on "Create Account" button
     When user should be navigated on Sign up your account page
     Then user navigate to page email address and full name shows as expected
-    Then user enter "elenmoni@" in the Create Account username field
+    Then user enter "elenmoni21@" in the Create Account username field
     Then user enter "Mona3yo#" in the Create Account password field
     Then user enter "Mona3yo#" in the Create Account confirm password field
     Then user click on "Submit" button
     Then validate Sign in to your Account page
-    Then user enter "elenmoni@" in the Sign In username field
+    Then user enter "elenmoni21@" in the Sign In username field
     Then user enter "Mona3yo#" in the Sign In password field
     Then user click on "Sign In" button
     Then click on profile button
