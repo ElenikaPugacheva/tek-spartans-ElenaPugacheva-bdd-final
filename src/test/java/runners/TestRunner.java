@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         glue = "steps",
         dryRun = false,
-        tags = "",
+        tags = "@UserProfile",
         plugin = {
                 "html:target/cucumber_report/index.html"
         }
