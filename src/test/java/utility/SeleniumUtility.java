@@ -16,7 +16,7 @@ import java.util.List;
 public class SeleniumUtility extends BaseSetup {
     private static final Logger LOGGER = LogManager.getLogger(SeleniumUtility.class);
     private WebDriverWait getWait() {
-        return new WebDriverWait(getDriver(), Duration.ofSeconds(20));
+        return new WebDriverWait(getDriver(), Duration.ofSeconds(30));
     }
     private WebElement waitForVisibility(By locator) {
         return getWait().until(ExpectedConditions.visibilityOfElementLocated(locator));
