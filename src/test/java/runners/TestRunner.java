@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = false,
         tags = "",
-        plugin = {
-                "html:target/cucumber_report/index.html"
+        plugin = {        "html:target/cucumber_report/index.html",
+                          "json:target/jsonReport/report.json"
         }
 )
 public class TestRunner {
